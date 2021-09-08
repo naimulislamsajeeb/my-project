@@ -1,0 +1,758 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 0.8;
+}
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/*======== Navbar CSS goes here =====*/
+.navbar {
+    padding-top:0;
+    padding-bottom:0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0; 
+}
+.navbar .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left:30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 125px;
+    transition: all linear .3s;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: #c7b299;
+}
+/*======== banner CSS goes here =====*/
+#banner {
+    background: url(../images/banar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+#banner::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.7);
+}
+.banner-conten-slider {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.xtra1 {
+    position: relative;
+    z-index: 999;
+}
+.banner-item h3 {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.banner-item h1 {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+.banner-item p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 48px;
+}
+.banner-item a {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #c7b299;
+    padding:20px 38px;
+    border-radius: 3px;
+    border-bottom: 3px solid #736357;
+}
+.banner-item {
+    padding-bottom: 20px;
+}
+/*======== service CSS goes here =====*/
+#service {
+    padding-top: 80px;
+    padding-bottom: 116px;
+}
+.service-item {
+    margin:0 12px;
+    padding-bottom: 20px;
+}
+.service-item i {
+    font-size: 48px;
+    color: #555;
+}
+.service-item h3 {
+    font-size: 22px;
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-top: 13px;
+}
+.service-item p {
+    font-size: 14px;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    padding-top: 10px;
+    position: relative;
+}
+.service-item p::after {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.service-item:hover i {
+    color: #c7b299;
+}
+.service-item:hover h3 {
+    color: #c7b299;
+}
+.service-item:hover p::after {
+    background-color: #c7b299;
+}
+/*======== mockup CSS goes here =====*/
+#mockup {
+    background-color: #fbfaf8;
+    padding-top: 83px;
+}
+.heading h3{
+    font-size: 30px;
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.heading p{
+    font-size: 16px;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 0 10px;
+    padding-top: 16px;
+}
+.mockup-img {
+    padding-top: 20px;
+}
+/*======== purchase CSS goes here =====*/
+#purchase {
+    background-image: linear-gradient(to right, #211b19 , #4e3427);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.purchase-left h3 {
+    color: #fff;
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 7px;
+}
+.purchase-left p {
+    color: #615855;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.purchase-left span {
+    color: #c7b299;
+}
+.purchase-right a {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #c7b299;
+    padding:20px 38px;
+    border-radius: 3px;
+    border-bottom: 3px solid #736357;
+}
+.purchase-right {
+    margin-top: 10px;
+}
+/*======== project CSS goes here =====*/
+#project {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.buttons {
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+.buttons .btn {
+    padding: 10px 20px;
+    border: 1px solid #ebebeb;
+    color: #8c8c8c;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    margin:0 3px;
+}
+.project-img {
+    position: relative;
+}
+.project-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.7);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.icons i{
+    color: #fff;
+    font-size: 27px;
+    margin: 13px;
+}
+
+.project-info {
+    background-color: #fbfaf8;
+    padding: 30px;
+    position: relative;
+}
+.project-info::after {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-color: #fbfaf8;
+    left: 19px;
+    top: -11px;
+    transform: rotate(45deg);
+}
+.project-info h3 {
+    color: #c7b299;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    padding-bottom: 6px;
+}
+.project-info p {
+    color: #d1d1d1;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+.project-item:hover .project-img-overlay {
+    opacity: 1;
+}
+.project-item:hover .project-info {
+    background-color: #362f2d;
+}
+.project-item:hover .project-info::after {
+    background-color: #362f2d;
+}
+.project-item:hover .project-info h3 {
+    color: #fff;
+}
+.project-item:hover .project-info p {
+    color: #c7b299;
+}
+.project-item {
+    margin-bottom: 24px;
+}
+.buttons .btn:hover {
+    background-color: #998675;
+    color: #fff;
+}
+.mixitup-control-active {
+    background-color: #998675;
+    color: #fff!important;
+}
+.view-btn a{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #c7b299;
+    padding:20px 38px;
+    border-radius: 3px;
+    border-bottom: 3px solid #736357;
+}
+.view-btn {
+    padding-top: 40px;
+}
+/*======== video CSS goes here =====*/
+#video {
+    background:url(../images/video.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 210px;
+    padding-bottom: 254px;
+    position: relative;
+}
+#video::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.5);
+    top: 0;
+    left: 0;
+}
+.video h3 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    padding-top: 55px;
+}
+.video p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 28px;
+}
+.video i {
+    font-size: 70px;
+    color: #fff;
+    position: relative;
+}
+.video i::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0.2);
+    transform: translate(-50%,-50%);
+}
+.video {
+    position: relative;
+    z-index: 99;
+}
+/*======== mobile CSS goes here =====*/
+#mobile {
+    padding-top: 80px;
+}
+.mobile-text {
+    padding-top: 115px;
+}
+.mobile-text h2 {
+    font-size: 30px;
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding-bottom: 17px;
+}
+.mobile-text p {
+    font-size: 16px;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+    padding-right: 58px;
+}
+.mobile-feat i {
+    width: 21px;
+    height: 21px;
+    background-color: #c7b299;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 21px;
+    text-align: center;
+    margin-right: 20px;
+}
+.mobile-feat {
+    padding-top: 5px;
+    padding-left: 50px;
+}
+.mobile-feat p {
+    margin-bottom: 0;
+}
+/*======== counter CSS goes here =====*/
+#counter {
+    background-image: linear-gradient(to right, #211b19 , #4e3427);
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+.counter-item h3 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 30px;
+}
+.counter-item p {
+    color: #c7b299;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-top: 21px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.counter-item p::After{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+#blog {
+    padding-top: 82px;
+    padding-bottom: 100px;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.7);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.date {
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    transition: all linear .3s;
+}
+.day {
+    width: 50px;
+    height: 35px;
+    background-color: #363636;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    transition: all linear .3s;
+}
+.day h3 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 35px;
+}
+.month {
+    width: 50px;
+    height: 25px;
+    background-color: #252525;
+    text-align: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transition: all linear .3s;
+}
+.month p{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+}
+.blog-text {
+    padding:30px 28px;
+    border: 1px solid #f8f8f8;
+    border-top:0;
+    transition: all linear .3s;
+}
+.blog-text h3 {
+    font-size: 20px;
+    color: #555;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 8px;
+    transition: all linear .3s;
+}
+.blog-text p {
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+    margin-bottom: 15px;
+    transition: all linear .3s;
+}
+.blog-text a {
+    color: #c7b299;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+.read {
+    position: relative;
+}
+.read i {
+	font-size: 15px !important;
+	position: absolute;
+	top: 8px;
+	left: 86px;
+    color: #c7b299;
+}
+.blog-main {
+    padding-top: 18px;
+}
+.blog-item:hover .blog-img-overlay{
+    opacity: 1;
+}
+.blog-item:hover .day{
+    background-color: #c7b299;
+}
+.blog-item:hover .month{
+    background-color: #a48d72;
+}
+.blog-item:hover .blog-text{
+    background-color: #362f2d;
+    border-color: #362f2d;
+}
+.blog-item:hover .blog-text h3{
+    color: #c7b299;
+}
+.blog-item:hover .blog-text p{
+    color: #fff;
+}
+.blog-item {
+    margin: 0 12px;
+}
+
+
+.slick-center .blog-item .blog-img-overlay{
+    opacity: 1;
+}
+.slick-center .blog-item .day{
+    background-color: #c7b299;
+}
+.slick-center .blog-item .month{
+    background-color: #a48d72;
+}
+.slick-center .blog-item .blog-text{
+    background-color: #362f2d;
+    border-color: #362f2d;
+}
+.slick-center .blog-item .blog-text h3{
+    color: #c7b299;
+}
+.slick-center .blog-item .blog-text p{
+    color: #fff;
+}
+.arrow-icon i {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #d1d1d1;
+    border-radius: 50%;
+    color: #d1d1d1;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    margin:0 2px;
+    cursor: pointer;
+}
+.arrow-icon {
+    padding-top: 40px;
+}
+.arrow-icon i:hover {
+    border-color: #cab69f;
+    color: #cab69f;
+}
+/*======== brand CSS goes here =====*/
+#brand {
+    background: url(../images/brand-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    position: relative;
+}
+#brand::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.7);
+}
+.brand-main {
+    position: relative;
+    z-index: 99;
+}
+.slick-slide img {
+    display: inline-block
+}
+/*======== footer CSS goes here =====*/
+#footer {
+    background-color: #191919;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.footer-item p {
+    font-size: 14px;
+    color: #555;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+}
+.footer-item .xtra3{
+    padding-top: 30px;
+    padding-right: 27px;
+}
+.footer-item .read {
+    position: relative;
+}
+
+.footer-item .read i {
+    font-size: 15px !important;
+    position: absolute;
+    top: 6px;
+    left: 86px;
+    color: #c7b299;
+}
+.footer-item a {
+    color: #d1d1d1;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+.footer-post h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    padding-top: 28px;
+}
+.footer-post p{
+    padding-right: 10px;
+}
+.footer-item span {
+    font-size: 12px;
+    color: #363636;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
+.post-item {
+    border-bottom: 1px solid #252525;
+    padding-top: 18px;
+}
+.post-item:last-child {
+    border-bottom: none;
+}
+.post-item:hover span {
+    color: #fff;
+}
+.post-item:hover p {
+    color: #c7b299;
+}
+.footer-post a {
+    color: #00bff3;
+}
+.dribble-img {
+    margin:5px;
+}
+.dribble-main {
+    padding-top: 20px;
+}
+/*======== copyright CSS goes here =====*/
+#copyright {
+    background-color: #111111;
+    padding-top: 46px;
+    padding-bottom: 52px;
+}
+.copyright-left p {
+    color: #555;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.copyright-left span {
+    color: #959595;
+}
+.copyright-left a {
+    margin-left: 28px;
+    color: #555555;
+    position: relative;
+}
+.copyright-left a::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #252525;
+    top: 50%;
+    left: -14px;
+    transform: translateY(-50%);
+}
+.copyright-right a:first-child:after {
+    display: none;
+}
